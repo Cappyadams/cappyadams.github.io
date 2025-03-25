@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CappyAdams - Home of the portfolio for the 3D artist, CappyAdams.">
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CappyAdams Website">
+    <meta property="og:description" content="CappyAdams - Home of the portfolio for the 3D artist, CappyAdams.">
+    <meta property="og:image" content="images/logo.jpg">
+    <meta property="og:type" content="website">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="css/common.css" as="style">
+    <link rel="preload" href="css/mobile.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style">
+    
+    <title>CappyAdams Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="js/mobile-menu.js" defer></script>
+    <script src="js/theme-selector.js" defer></script>
+</head>
+<body>
+    <header role="banner">
+        <nav role="navigation" aria-label="Main navigation">
+            <a href="/" class="logo-link" aria-label="CappyAdams Home">
+                <img src="images/logo.jpg" alt="CappyAdams Logo" class="logo-image" loading="lazy">
+                <div class="logo">CappyAdams</div>
+            </a>
+            <ul class="menu" role="menubar">
+                <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                <li role="none"><a href="aboutme.html" role="menuitem">About Me</a></li>
+                <li role="none"><a href="commissions.html" role="menuitem">Commissions</a></li>
+                <li class="has-submenu" role="none">
+                    <a href="#" role="menuitem" aria-haspopup="true" aria-expanded="false">Downloads</a>
+                    <ul class="submenu" role="menu" aria-label="Projects">
+                        <li role="none"><a href="dl_3D.html" role="menuitem">3D Models and Stuff</a></li>
+                        <li role="none"><a href="dl_ai.html" role="menuitem">AI Stuff</a></li>
+                        <li role="none"><a href="https://cappyadams.gumroad.com" role="menuitem">VRC Stuff</a></li>
+                        <li role="none"><a href="dl_wiiu.html" role="menuitem">Wii U Stuff</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu" role="none">
+                    <a href="#" role="menuitem" aria-haspopup="true" aria-expanded="false">Community</a>
+                    <ul class="submenu" role="menu" aria-label="Community">
+                        <li role="none"><a href="discord.html" role="menuitem"><i class="fab fa-discord"></i> Discord</a></li>
+                        <li role="none"><a href="https://vrc.group/CAPDAM.6425" role="menuitem"><i class="fa-solid fa-vr-cardboard"></i> VRChat group</a></li>
+                    </ul>
+                </li>
+                <li role="none"><a href="faq.html" role="menuitem">FAQ</a></li>
+            </ul>            
+            <div class="theme-hint">
+                <select id="theme-select" aria-label="Theme Selector" role="combobox">
+                    <option value="main-site" data-theme="main-site">Main Theme</option>
+                    <option value="light" data-theme="light">Light Theme</option>
+                    <option value="dark" data-theme="dark">Dark Theme</option>
+                    <option value="high-contrast" data-theme="high-contrast">High Contrast</option>
+                    <option value="forest" data-theme="forest">Forest Theme</option>
+                    <option value="mint" data-theme="mint">Mint Theme</option>
+                    <option value="cyberpunk" data-theme="cyberpunk">Cyberpunk Theme</option>
+                    <option value="halloween" data-theme="halloween">Halloween Theme</option>
+                </select>
+            </div>
+            <button id="mobile-menu-button" class="mobile-menu-button" aria-label="Toggle Navigation Menu" aria-expanded="false">☰</button>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <!-- Add your main content here -->
+        <div class="intro-container">
+            <section class="intro-section">
+                <h1 class="intro-title">Wii U Downloads</h1>
+                <p class="intro-text">
+                    Since I hacked my Wii U, I got super into making themes, mods, etc for the console. here you can find all types of mods I've made.
+                </p>
+                <p class="intro-text">
+                    <i>Note: You NEED a homebrewed console... Make sure you have Amora installed on your Wii U. (There's planty of tutorials for this)</i>
+                </p>
+                <ul>
+                    <li><a href="WiiU_Themes.html">Themes</a></li>
+                    <li><a href="https://gamebanana.com/members/2172988">Mods</a></li>
+                </ul>
+                </div>
+            </section>
+        </div>              
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <ul class="footer-menu" role="menu">
+                <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                <li role="none"><a href="aboutme.html" role="menuitem">About Me</a></li>
+                <li role="none"><a href="Commissions.html" role="menuitem">Commissions</a></li>
+                <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+                <li role="none"><a href="faq.html" role="menuitem">FAQ</a></li>
+            </ul>
+            <ul class="social-menu" role="menu">
+                <li role="none">
+                    <a href="https://x.com/MikuMaikoReal" role="menuitem" aria-label="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="https://www.deviantart.com/cappyadams" role="menuitem" aria-label="Bluesky">
+                        <i class="fa-brands fa-deviantart"></i>
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="discord.html" role="menuitem" aria-label="Discord">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="https://www.twitch.tv/cappyadams" role="menuitem" aria-label="Twitch">
+                        <i class="fa-brands fa-twitch"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="footer-text">
+                This website was made using the <a href="https://github.com/Yusarina/Neoneko-Website-Base-Template">Neaneko Website Base Template.</a> Modified by <a href="https://github.com/Cappyadams">CappyAdams</a>
+            </p>            
+        </div>
+    </footer>       
+</body>
+</html>
